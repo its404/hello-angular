@@ -1,3 +1,4 @@
-<input type="text" #myinput />
-<button (click)="onClick($event, myinput.value)">Click Me</button>
+<input type="text" #myinput [(ngModel)]="message" />
+<button (click)="onClick($event, myinput.value)">Save Value</button>
+<button (click)="simpleUpdate.emit({ text: myinput.value })">Emit Value</button>
 <div>{{ message }}</div>

@@ -2,7 +2,7 @@
 <div style="text-align:center">
   <h1>Welcome to {{ title }}!</h1>
 </div>
-<simple-form></simple-form>
+<simple-form (simpleUpdate)="onSimpleUpdate($event)"></simple-form>
 <h1>{{ messageService.message }}</h1>
 <h2>{{ api }}</h2>
 <ul>

@@ -12,4 +12,8 @@ export class AppComponent {
     @Inject("API") public api: String,
   ) {}
   title = "Hello World";
+
+  onSimpleUpdate(event) {
+    this.title = event.text;
+  }
 }
